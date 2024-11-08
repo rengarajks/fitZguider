@@ -34,7 +34,7 @@ const BodyWeightStatus = () => {
             })}
           />
           {/* Add Icon over the Gauge */}
-          <div className="relative  transform  -translate-x-[12vh] lg:-translate-x-[13vh]">
+          <div className="relative  transform  -translate-x-[210%]">
              <BoltIcon sx={{fontSize:'2.4rem'}}/>
           </div>
         </div>

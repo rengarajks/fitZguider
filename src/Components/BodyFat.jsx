@@ -34,7 +34,7 @@ const BodyFatStatus = () => {
             })}
           />
           {/* Add Icon over the Gauge */}
-          <div className="relative  transform  -translate-x-[12vh] lg:-translate-x-[13vh]">
+          <div className="relative  transform  -translate-x-[210%]">
              <BoltIcon sx={{fontSize:'2.4rem'}}/>
           </div>
         </div>
@@ -47,7 +47,7 @@ const BodyFatStatus = () => {
           <div className='grid grid-rows-2 '>
             <div className='flex items-center'>
               <div className='flex items-end'>
-                <h1 className='text-4xl font-semibold'>24</h1>
+                <h1 className='text-4xl font-semibold'>25</h1>
                 <h1 className='font-semibold'>%</h1>
               </div>
             </div>
