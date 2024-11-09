@@ -48,13 +48,13 @@ const BodyWeightStatus = () => {
             <div className='flex items-center'>
               <div className='flex items-end'>
                 <h1 className='text-4xl font-semibold'>24</h1>
-                <h1 className='font-semibold'>%</h1>
+                <h1 className='font-semibold'>kg</h1>
               </div>
             </div>
             <div className='flex items-center'>
               <div className='flex items-end'>
                 <h1 className='text-4xl font-semibold'>12</h1>
-                <h1 className='font-semibold'>%</h1>
+                <h1 className='font-semibold'>kg</h1>
               </div>
             </div>
           </div>

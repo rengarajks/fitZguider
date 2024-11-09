@@ -1,14 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Gauge, gaugeClasses } from '@mui/x-charts/Gauge';
 import { Icon } from '@mui/material'; // Import any icon you want to use
 import BoltIcon from '@mui/icons-material/Bolt';
 
 const BodyFatStatus = () => {
+  
+  // const [bodyFat, setBodyFat] = useState(localStorage.getItem('fat'));
+
   const settings = {
     width: 120,
     height: 120,
     value: 60, // You may keep this for reference but it won't be visible
   };
+
+  // console.log('bf=',bodyFat)
+
 
   return (
     <div className='bg-white px-[5vh] py-[1vh] rounded-md mx-[2vh]'>
@@ -38,7 +44,7 @@ const BodyFatStatus = () => {
              <BoltIcon sx={{fontSize:'2.4rem'}}/>
           </div>
         </div>
-        <div className='grid grid-cols-2 gap-2 font-bold'>
+        <div className='grid grid-cols-2  font-bold gap-2'>
           <div className='grid grid-rows-2'>
             <div className='flex items-center text-gray-600'>Current</div>
             <div className='flex items-center text-gray-600'>Target</div>
@@ -47,13 +53,13 @@ const BodyFatStatus = () => {
           <div className='grid grid-rows-2 '>
             <div className='flex items-center'>
               <div className='flex items-end'>
-                <h1 className='text-4xl font-semibold'>25</h1>
+                <h1 className='text-4xl font-semibold'>{localStorage.getItem('bodyFat')||0}</h1>
                 <h1 className='font-semibold'>%</h1>
               </div>
             </div>
             <div className='flex items-center'>
               <div className='flex items-end'>
-                <h1 className='text-4xl font-semibold'>12</h1>
+                <h1 className='text-4xl font-semibold'>{localStorage.getItem('target') || 0}</h1>
                 <h1 className='font-semibold'>%</h1>
               </div>
             </div>
